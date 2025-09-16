@@ -15,7 +15,7 @@ $zahl3 = rand(1,100);
 
 if($zahl1 <$zahl2 && $zahl1<$zahl3){
     echo $zahl1;
-}elseif($zahl1 >$zahl2 &&  $zahl2< $zahl3){
+}elseif($zahl1 >$zahl2 && $zahl2< $zahl3){
     echo $zahl2;
 }else{
     echo $zahl3;
