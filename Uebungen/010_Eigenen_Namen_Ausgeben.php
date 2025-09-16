@@ -6,7 +6,8 @@
 * Nachnamen und Wohnort und gib dann folgendes aus:
 * X Y wohnt in Z.
 */
-print'Mahdi Vejdani';
+
 $name = 'Mahdi';
 $nachname = 'Vejdani';
-$wohnnrt = 'Kernen im Remstal';
+$wohnort = 'Kernen im Remstal';
+print"$name $nachname wohnt in $wohnort. ";
