@@ -20,17 +20,21 @@
  *
  * Zusatz 2: Benutze für die Ausgabe eine HTML-Tabelle.
  */
-for($i = 1; $i <= 10; $i++) {
-    for ($j = 1; $j <= 10; $j++) {
-        $num = $i * $j;
 
-        if ($num < 10) {
-            echo "00" . $num . " ";
-        } elseif ($num < 100) {
-            echo "0" . $num . " ";
-        } else {
-            echo $num . " ";
-        }
-    }
-    echo "\n";
+
+
+for($i = 1; $i <= 10; $i++) {
+for ($j = 1; $j <= 10; $j++) {
+$zahl = $i * $j;
+
+if ($zahl < 10) {
+echo "00" . $zahl . " ";
+} elseif ($zahl < 100) {
+echo "0" . $zahl . " ";
+} else {
+echo $zahl . " ";
 }
+}
+echo "\n";
+}
+
