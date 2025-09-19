@@ -1,0 +1,12 @@
+
+TODOs
+
+Datenbankverbindung auslagern
+
+Film anzeigen
+
+Film eintragen
+
+Film updaten
+
+Film löschen

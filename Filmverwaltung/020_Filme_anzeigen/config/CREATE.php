@@ -25,5 +25,3 @@ var_dump($statement);
 
 $spalten = $statement->fetchAll();
 var_dump($spalten);
-
-?>
