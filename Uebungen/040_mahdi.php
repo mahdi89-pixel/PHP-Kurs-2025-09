@@ -8,7 +8,7 @@
 for ($i =1; $i < 6; $i++){
     print $i . ' ';
 }
-echo '<br>';
+echo "\n";
 
 /*
 * Schreibe eine for-Schleife, die Folgendes ausgibt:
@@ -18,7 +18,7 @@ echo '<br>';
 for ($i =100; $i > 9; $i -= 10) {
     print $i . ' ';
 }
-echo '<br>';
+echo "\n";
 
 /*
 * Schreibe eine for-Schleife, die Folgendes ausgibt:
@@ -27,7 +27,7 @@ echo '<br>';
 for ($i =1000; $i <=6000; $i +=1000) {
     print $i . ' ';
 }
-echo '<br>';
+echo "\n";
 
 /*
 * Schreibe eine for-Schleife, die Folgendes ausgibt:
@@ -37,7 +37,7 @@ echo '<br>';
 for ($i =2; $i >= -1; $i -= 0.5) {
     print $i . ' ';
 }
-echo '<br>';
+echo "\n";
 
 
 /*
@@ -48,7 +48,7 @@ echo '<br>';
 for ($i =1; $i <= 9.4; $i += 1.2) {
     print $i . ' ';
 }
-echo '<br>';
+echo "\n";
 
 /*
 * Schreibe eine for-Schleife, die Folgendes ausgibt:
@@ -58,7 +58,7 @@ echo '<br>';
 for ($i =13; $i <= 29; $i += 4) {
     print $i . ' ';
 }
-echo '<br>';
+echo "\n";
 
 
 /*
@@ -69,7 +69,7 @@ echo '<br>';
 for ($i =5; $i <= 13; $i += 2) {
     print 'Z'.$i . ' ';
 }
-echo '<br>';
+echo "\n";
 
 /*
 * Schreibe eine for-Schleife, die Folgendes ausgibt:
@@ -79,7 +79,7 @@ echo '<br>';
 for ($i =2; $i <= 22; $i += 10) {
     print 'a'.$i. 'b'.($i+1) . ' ';
 }
-echo '<br>';
+echo "\n";
 
 
 
@@ -92,7 +92,7 @@ echo '<br>';
 for ($i =1; $i <= 10; $i++) {
     print $i . ' ';
 }
-echo '<br>';
+echo "\n";
 
 
 /*
@@ -107,7 +107,7 @@ for ($i =13, $k=1; $i <= 45; $k++) {
         $i += 4;
     }
 }
-echo '<br>';
+echo "\n";
 
 /*
 * Schreibe ein Programm, das per for-Schleife
@@ -119,7 +119,7 @@ for ($i =1; $i <= 20; $i++) {
     $summe += $i;
 }
 print $summe;
-echo '<br>';
+echo "\n";
 
 
 /*
@@ -134,7 +134,7 @@ for ($i =1; $i <= 9; $i++) {
         print (10-$i). ' ';
     }
 }
-echo '<br>';
+echo "\n";
 /*
 * Schreibe ein Programm, das mit EINER for-Schleife
 * alle natürlichen Zahlen von 1 bis 39 sowie 61 bis 100
@@ -149,4 +149,4 @@ for ($i =1; $i <= 100; $i++) {
     }
 
 }
-echo '<br>';
+echo "\n";
