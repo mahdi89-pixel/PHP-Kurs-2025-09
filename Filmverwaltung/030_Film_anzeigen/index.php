@@ -1,10 +1,7 @@
 <?php
 
-$options = [
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-];
-$db = new PDO('mysql:host=localhost;dbname=filmverwaltung', 'root', "", $options);
+// require_once bindet die angegebene Datei an genau der Stelle im Quellcode ein.
+require_once 'lib/db_verbindung.php';
 
 $stmt = $db->query('SELECT * FROM filme;');
 $filme = $stmt->fetchAll();

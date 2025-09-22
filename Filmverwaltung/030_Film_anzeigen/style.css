@@ -1,8 +1,23 @@
+h1{
+    color: black;
+    font-family: sans-serif;
+}
 table {
+    font-family: sans-serif;
     border-collapse: collapse;
+    text-align: left;
+
+    background-color: #3f6677;
+    color: whitesmoke;
 }
 
 th, td {
-    border: 2px solid plum;
+    border: 1px solid whitesmoke;
     padding: 10px;
+
 }
+img{
+    width: 200px;
+}
+
+
