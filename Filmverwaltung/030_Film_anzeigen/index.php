@@ -8,6 +8,11 @@ $db = new PDO('mysql:host=localhost;dbname=filmverwaltung', 'root', "", $options
 
 $stmt = $db->query('SELECT * FROM filme;');
 $filme = $stmt->fetchAll();
+
+if (empty($filme)) {
+    echo "<p>Keine Filme gefunden.</p>";
+    exit;
+}
 // var_dump($filme);
 
 // var_dump($filme[0]);  // array(9)
