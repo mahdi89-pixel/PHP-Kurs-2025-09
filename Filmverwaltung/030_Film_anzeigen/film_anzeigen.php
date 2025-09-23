@@ -29,7 +29,7 @@ var_dump($film);
     <?php  foreach ($film as $k => $v){ ?>
     <tr>
         <th>
-            <?php echo $k; ?>
+            <?php echo ucfirst($k); ?>
         </th>
         <td>
             <?php echo $v; ?>

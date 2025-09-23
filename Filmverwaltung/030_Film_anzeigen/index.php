@@ -3,7 +3,7 @@
 // require_once bindet die angegebene Datei an genau der Stelle im Quellcode ein.
 require_once 'lib/db_verbindung.php';
 
-$stmt = $db->query('SELECT * FROM filme;');
+$stmt = $db->query('SELECT id, titel, jahr, laenge, genre  FROM filme;');
 $filme = $stmt->fetchAll();
 
 if (empty($filme)) {
@@ -18,15 +18,17 @@ if (empty($filme)) {
 
 $headings = array_keys($filme[0]);
 // Spaltenüberschriften entfernen:
-//unset($headings[0]);  // In PHP werden Arrays nicht neu indiziert
+unset($headings[0]);  // In PHP werden Arrays nicht neu indiziert
 unset($headings[8]);
-var_dump($headings);
+//var_dump($headings);
 
 
 foreach ($headings as $k => $v) {
-    if ($v == 'fsk') $v = strtoupper($v);
+    //if ($v == 'fsk') $v = strtoupper($v);
+    if ($v == 'laenge') $v = 'länge';
     $headings[$k] = $v;
 }
+
 
 
 $headings = array_map('ucfirst', $headings);
@@ -64,11 +66,13 @@ foreach ($filme as $key => $film) {
     <?php foreach ($filme as $film) { ?>
 
         <tr onclick="location.href='film_anzeigen.php?id=<?php echo $film['id']; ?>'">
-            <?php foreach ($film as $f) { ?>
+            <?php foreach ($film as $k => $v) { ?>
 
-                <td>
-                    <?php echo $f; ?>
-                </td>
+
+                <?php
+                if ($k != 'id') echo "<td>$v</td>";
+                ?>
+
 
             <?php } ?>
         </tr>

@@ -1,5 +1,9 @@
+
+body{
+    background-color: #282a36;
+}
 h1{
-    color: black;
+    color: whitesmoke;
     font-family: sans-serif;
 }
 table {
@@ -7,7 +11,7 @@ table {
     border-collapse: collapse;
     text-align: left;
 
-    background-color: #3f6677;
+    background-color: #282a36;
     color: whitesmoke;
 }
 
@@ -17,7 +21,7 @@ th, td {
 
 }
 img{
-    width: 200px;
+    width: 300px;
 }
 
 
