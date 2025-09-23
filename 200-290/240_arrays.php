@@ -45,3 +45,15 @@ foreach ($leute as $leut){
 foreach ($person as $s => $w){ //$s für Schlüssel, $w für Wert
     echo $s . ': ' . $w . "\n";
 }
+// Doppelpfeil beim nummerischen Array
+$menschen = ['Peter', 'Paul', 'Mary'];
+
+//kann beim Auslesen verwendet werden
+foreach ($menschen as $k => $v){
+    echo ($k+1) . '. ' . $v. "\n";
+}
+
+for ($i = 0; $i < count($menschen); $i++){
+    echo ($i + 1) . '. ' . $menschen[$i] . "\n";
+}
+

@@ -12,7 +12,7 @@ $db = new PDO('mysql:host=localhost;dbname=filmverwaltung', 'root', "", $options
 $db->query('TRUNCATE TABLE filme;');
 
 $db->query("INSERT INTO filme VALUES
-(1, 'Equalizer', 2014, 'Action', 'Sony Pictures', 16, 192.3, 132, NULL),
+(1, 'Equalizer', 2014, 'Action', 'Sony Pictures', 16, 192.3, 132, 'equalizer.jpg'),
 (2, 'Inception', 2010, 'Science Fiction', 'Warner Bros.', 12, 829.89, 148, 'inception.jpg'),
 (3, 'The Dark Knight', 2008, 'Action', 'Warner Bros.', 16, 1004.93, 152, 'dark_knight.jpg'),
 (4, 'Titanic', 1997, 'Drama/Romance', 'Paramount Pictures', 12, 2187.46, 195, 'titanic.jpg'),

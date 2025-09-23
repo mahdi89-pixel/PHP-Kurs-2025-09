@@ -12,6 +12,21 @@ $film = $stmt->fetch();
 $film['cover'] = '<img src="cover/' . $film['cover'] . '">';
 var_dump($film);
 
+$gross = ['id', 'fsk'];
+foreach ($film as $k => $v){
+    if (in_array($k, $gross)) $k = strtoupper($k);
+    //TODO: ucfirst() hier hin
+    if ($k == 'laenge') $k = 'länge';
+    if($k == 'einspielergebnis') {
+        $v = $v * 1_000_000;
+        $v = number_format($v, 0, ',', '.');
+    }
+    $film_ausgabe[$k] = $v;
+}
+//$film = $film_ausgabe;
+
+
+
 
 ?>
 <!DOCTYPE html>

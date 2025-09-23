@@ -8,7 +8,7 @@ function addiere($zahl1, $zahl2){
 
 //Funktionsaufruf
 echo addiere(4, 7); //11
-echo "\n"
+echo "\n";
 
 // Standard/Default-Werte festlegen
 function addiere2($zahl1 , $zahl2 = 1){
