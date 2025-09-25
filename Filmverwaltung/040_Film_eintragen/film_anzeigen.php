@@ -43,7 +43,7 @@ foreach ($film as $k => $v) {
     <link rel="stylesheet" href="style.css">
     <style>
         img {
-            width: 200px;
+            width: 300px;
         }
     </style>
 </head>

@@ -35,6 +35,7 @@ shuffle($array);
 
 
 
+
 for($i = 0; $i < count($array); $i++){
     $counter = 0;
     for($j = 0; $j < count($array); $j++){
@@ -49,5 +50,6 @@ for($i = 0; $i < count($array); $i++){
     }
 }
 print_r($array);
+
 
 
