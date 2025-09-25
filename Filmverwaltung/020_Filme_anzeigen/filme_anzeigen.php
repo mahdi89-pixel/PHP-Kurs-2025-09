@@ -1,8 +1,8 @@
 <?php
 
 $options = [
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
 ];
 $db = new PDO('mysql:host=localhost;dbname=filmverwaltung', 'root', "", $options);
 
@@ -53,22 +53,22 @@ foreach ($filme as $key => $film) {
 
     <tr>
         <?php foreach ($headings as $heading) { ?>
-            <th>
-                <?php echo $heading; ?>
-            </th>
+        <th>
+            <?php echo $heading; ?>
+        </th>
         <?php } ?>
     </tr>
 
     <?php foreach ($filme as $film) { ?>
-        <tr>
-            <?php foreach ($film as $f) { ?>
+    <tr>
+        <?php foreach ($film as $f) { ?>
 
                 <td>
                     <?php echo $f; ?>
                 </td>
 
-            <?php } ?>
-        </tr>
+        <?php } ?>
+    </tr>
     <?php } ?>
 
 

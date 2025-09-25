@@ -15,6 +15,7 @@ if (isset($db)) {
     $stmt = $db->query("SELECT * FROM filme WHERE id={$_GET['id']};");
     $film = $stmt->fetch();
 }
+
 $film['cover'] = '<img src="cover/' . $film['cover'] . '">';
 
 var_dump($film);
@@ -50,7 +51,7 @@ foreach ($film as $k => $v) {
 <h1>Film anzeigen</h1>
 
 <table>
-    <?php foreach ($film_ausgabe as $k => $v) { ?>
+        <?php foreach ($film_ausgabe as $k => $v) { ?>
         <tr>
             <th>
                 <?php echo ucfirst($k); ?>
@@ -59,7 +60,7 @@ foreach ($film as $k => $v) {
                 <?php echo $v; ?>
             </td>
         </tr>
-    <?php } ?>
+        <?php } ?>
 </table>
 
 </body>

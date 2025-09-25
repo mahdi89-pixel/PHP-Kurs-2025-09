@@ -1,34 +1,9 @@
-
-body{
-    background-image: url("https://images3.alphacoders.com/551/551456.jpg");
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-h1{
-    color: black;
-    font-family: Calibri, serif;
-}
 table {
-    font-family: Calibri, serif;
     border-collapse: collapse;
-    text-align: left;
-    height: 850px;
-    width: 500px;
-
-
-    background-color: #282a36;
-    color: whitesmoke;
 }
 
 th, td {
-    border: 1px solid whitesmoke;
+    border: 2px solid plum;
     padding: 10px;
-
 }
-img{
-    width: 300px;
-}
-
 

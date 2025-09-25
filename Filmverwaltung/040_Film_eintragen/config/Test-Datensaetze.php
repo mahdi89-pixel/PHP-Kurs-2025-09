@@ -15,10 +15,10 @@ $db->query("INSERT INTO filme VALUES
 (1, 'Equalizer', 2014, 'Action', 'Sony Pictures', 16, 192.3, 132, 'equalizer.jpg'),
 (2, 'Inception', 2010, 'Science Fiction', 'Warner Bros.', 12, 829.89, 148, 'inception.jpg'),
 (3, 'The Dark Knight', 2008, 'Action', 'Warner Bros.', 16, 1004.93, 152, 'dark_knight.jpg'),
-(4, 'Titanic', 1997, 'Drama/Romance', 'Paramount Pictures', 12, 2187.46, 195, 'titanic.png'),
+(4, 'Titanic', 1997, 'Drama/Romance', 'Paramount Pictures', 12, 2187.46, 195, 'titanic.jpg'),
 (5, 'The Matrix', 1999, 'Science Fiction', 'Warner Bros.', 16, 466.36, 136, 'matrix.png'),
 (6, 'Avatar', 2009, 'Science Fiction', '20th Century Fox', 12, 2923.71, 162, 'avatar.jpg'),
-(7, 'Gladiator', 2000, 'Historical Drama', 'DreamWorks', 16, 503.18, 155, 'gladiator.png'),
+(7, 'Gladiator', 2000, 'Historical Drama', 'DreamWorks', 16, 503.18, 155, 'gladiator.jpg'),
 (8, 'Jurassic Park', 1993, 'Adventure', 'Universal Pictures', 12, 1045.69, 127, 'jurassic_park.jpg'),
 (9, 'The Godfather', 1972, 'Crime/Drama', 'Paramount Pictures', 16, 250.34, 175, 'godfather.jpg'),
 (10, 'Interstellar', 2014, 'Science Fiction', 'Paramount Pictures', 12, 774.15, 169, 'interstellar.jpg'),
@@ -39,3 +39,6 @@ var_dump($stmt);
 $filme = $stmt->fetchAll();
 
 var_dump($filme);
+
+
+
