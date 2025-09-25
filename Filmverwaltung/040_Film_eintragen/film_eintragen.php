@@ -1,10 +1,34 @@
 <?php
 
+require_once 'lib/db_verbindung.php';
+
 // Einen neuen Film in die Datenbank eintragen.
 
 //HTML-Formular & INSERT INTO per PDO
 
 var_dump($_POST);
+// erstaufruf der Website: $_POST ist leer
+//Aufruf der Website durch das Formular: $_POST ist gefüllt mit den Inhalten des Formulars
+
+/*
+ INSERT INTO filme (titel, jahr, genre, vertrieb, fsk, einspielergebnis, laenge) VALUES
+('The Accountant', 2016, 'Action', 16, 155.6, 128);
+SELECT * FROM filme;
+ */
+
+if(isset($_POST['title'])) {
+
+    $sql = "INSERT INTO filme (titel, jahr, genre, vertrieb, fsk, einspielergebnis, laenge) VALUES"
+         . "(:titel, :jahr, :genre, :vertrieb, :fsk, :einspielergebnis, : laenge);";
+
+    // Prepared Statement
+    $stmt = $db-> prepare($sql);
+    $stmt->execute($_POST);
+
+    header('Location: index.php');
+
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
