@@ -20,3 +20,10 @@
  * erhalten 2 zusätzliche Tage Urlaub.
  */
 
+echo "Gib dein Alter ein(ganze Zahl): ";
+$age = readline("");
+$age = (int)$age;
+echo "\n";
+
+
+
